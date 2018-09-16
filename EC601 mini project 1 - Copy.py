@@ -20,7 +20,6 @@ def get_image():
     auth.set_access_token(access_key, access_secret)
     api = API(auth)
 
-
     "media":[
     {
     "media_url": "https://twitter.com/BU_Tweets.jpg"
@@ -33,9 +32,35 @@ def get_image():
     print('done')
 
 
+def detect_labels(path):
+    """Detects labels in the file."""
+    client = vision.ImageAnnotatorClient()
+
+    with io.open(path, 'C:\Users\anqia\Documents\SCHOOL\2018 FALL\EC 601 product design\mini assingment 1') as image_file:
+        content = image_file.read()
+
+    image = vision.types.Image(content=content)
+
+    response = client.label_detection(image=image)
+    labels = response.label_annotations
+    print('Labels:')
+
+    for label in labels:
+        print(label.description)
+
+
+
+def ffmpeg()
+    ffmpeg -i image2 -framerate 12 -i foo-%03d.fpeg -s Wxh foo.avi
+
 
 
 if __name__ == '__main__':
     get_image()
+
+    google_vision()
+
+    ffmpeg()
+
 
    
