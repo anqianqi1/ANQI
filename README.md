@@ -1,2 +1,4 @@
 # anqianqi1
-EC601 product design assignment update
+
+Hi,
+This is about EC601 product design assignment code update
