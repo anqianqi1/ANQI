@@ -7,10 +7,10 @@ from tweepy import OAuthHandler, API
 import wget
 
 # Twitter API credentials
-consumer_key = "Enter the consumer_key"
-consumer_secret = "Enter the consumer_secret"
-access_key = "Enter the access_key"
-access_secret = "Enter the access_secret"
+consumer_key = "jTC38AzwtgHKzLvusvOHm1ni4"
+consumer_secret = "H1WnO5q4oIq0VRs9coqJ5BjSmkIcx2DEhoXBOz77JaI7k0wboJ"
+access_key = "1039258380504846341-VzdOeFASNH5Kr2DSqLTtg7yIfIVEVy"
+access_secret = "Fcwy6ArMGLJoIrEZUOT4Rp4J8E36FOt6nNPUF5NABEBWh"
 
 
 def get_image():
@@ -21,15 +21,16 @@ def get_image():
     api = API(auth)
 
 
+    "media":[
+    {
     "media_url": "https://twitter.com/BU_Tweets.jpg"
 
 
         wget.download("media_url",'C:\Users\anqia\Documents\SCHOOL\2018 FALL\EC 601 product design\mini assingment 1')
     }
-
+    ]
 
     print('done')
-
 
 
 
